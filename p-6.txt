@@ -31,4 +31,5 @@ contract ChainLinkFund {
         // Chainlink price has 8 decimals, divide to show actual price
         return price / 1e8;
     }
+
 }
