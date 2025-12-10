@@ -83,7 +83,7 @@ MacOS:
     - If python not recognized, check PATH variable.
     - Use python3 if multiple versions installed.
 
----
+---‐--------
 
 4. Terminal Setup in VSCode
 
@@ -163,3 +163,4 @@ MacOS:
 - Use Goerli test ETH for deploying contracts
 - Always use virtual environments for Python projects
 - Keep VSCode and extensions updated
+
