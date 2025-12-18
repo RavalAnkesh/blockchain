@@ -42,7 +42,7 @@ contract AdvancedFundMe {
         );
         // Tuple destructuring: ignore unused variables with commas
         (, int256 answer, , , ) = priceFeed.latestRoundData(); // latestRoundData returns tuple
-        return uint256(answer * 1e10); // Convert 8 decimals to 18 decimals (matching units)
+        return uint256(answer)/1e8; // Convert 8 decimals to 18 decimals (matching units)
     }
 
     // Convert ETH amount to USD
@@ -77,4 +77,5 @@ contract AdvancedFundMe {
     function getBalance() public view returns (uint256) {
         return address(this).balance; // 'this' refers to the contract itself
     }
+
 }
